@@ -1,1 +1,44 @@
-"ApI"
+What is ApI?
+API stands for application programing interface
+API act as bridge between clint and server
+there are 2 types of api 
+SOAP API 
+xml 
+
+REST API
+xml json 
+http https
+crud
+post  201 created 
+put   200 ok 201 created 
+get   200 ok  
+delete 200 ok
+patch 
+batch
+
+diff bw put and patch ?
+response code 1xx 2xx 3xx 4xx 5xx
+response status created successful ok 
+response body json format xml 
+response time > 1- 2 sec 
+
+postman 
+jmeter
+{
+"id": "man",
+"name": "chiru"            
+                             
+}
+
+api calls
+apiurl/123
+apiurl?id="123"
+
+response code from server
+1xx  (information) 
+2xx  (success)
+3xx  (redirected)
+4xx  (clint error)
+5xx  (servererror)
+
+watch postman working video?
