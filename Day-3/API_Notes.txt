@@ -1,0 +1,49 @@
+New folder setup or first time setup 
+
+1. git init
+2. git status
+3. git add .
+4. git commit -m "First Commit"
+5. git remote add origin "Path Repo"
+6. git branch -M main
+7. git push
+
+existing data flow
+
+1.git clone "path of our repo"
+2.1.git pull (git fetch + git merge)
+       or
+2.2.git pull --rebase (put our changes at the top)
+
+3. git status
+4. git add .
+5. git commit -m "First Commit"
+6. git push
+
+branch
+
+1.git branch bname
+2.git branch 
+3.git checkout bname
+4.git branch -d bname 
+5.git merge <branch-name>
+6.git push origin --delete branchname
+
+
+newthings
+
+1.fork (photocopy)
+2.blame (who made the changes at what commit)
+
+Today(2/4/26)
+
+1.restore(undo our work in our file before stagging) to remove our file from stagging 
+2.revert(it is to go back or revert back changes which we commited)
+3. git log --oneline(commit #tag history)
+
+
+
+
+
+
+
