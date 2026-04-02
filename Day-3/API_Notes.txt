@@ -34,6 +34,7 @@ newthings
 
 1.fork (photocopy)
 2.blame (who made the changes at what commit)
+3.git restore --staged Day-3/Prog Day-3/GIT  (we can do multiple commit of file by adding space in between)
 
 Today(2/4/26)
 
