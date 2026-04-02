@@ -35,8 +35,6 @@ newthings
 1.fork (photocopy)
 2.blame (who made the changes at what commit)
 3.git restore --staged Day-3/Prog Day-3/GIT  (we can do multiple commit of file by adding space in between)
-4.git rm Day-3/Badcode.txt (to remove local file)
-5. cls to clear terminal 
 
 Today(2/4/26)
 
