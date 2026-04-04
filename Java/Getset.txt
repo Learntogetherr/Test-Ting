@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        Test t=new Test();
+        t.setUsername("chiru");
+        t.getUsername();
+        //System.out.print(t.name);
+        
+    }
+   
+}
+class Test{
+     private String name;
+     public String setUsername(String name){
+        return this.name=name;
+    }
+    public void getUsername(){
+        System.out.println(name);
+    }
+}
