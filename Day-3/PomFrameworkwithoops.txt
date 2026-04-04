@@ -1,0 +1,25 @@
+//by pom we achive abstraction
+
+class Main extends Config{
+    //inheritance and over ridding
+    //Test represent Test execution folder
+    public static void main(String[] args){
+        
+    }
+}
+class Config{
+    //comon function
+    //overloading
+    //encapsulstion
+    
+}
+
+class LoginPage{
+    //pages folder
+    
+}
+class LogoutPage{
+    //pages folder
+
+    
+}
