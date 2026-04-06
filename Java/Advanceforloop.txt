@@ -1,0 +1,13 @@
+//for loop array or arraylist  for(int i : arr){};
+class Main{
+    public static void main(String[] args){
+        loops();
+    }
+    public static void loops(){
+    int[] arr={1,6,8,9,10};
+    for(int n:arr){
+        System.out.print(n+" ");
+    }
+    
+    }
+}

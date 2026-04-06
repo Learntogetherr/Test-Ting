@@ -1,0 +1,26 @@
+//loops
+//for  initialize condition increment 
+//while
+//do -while 
+//advance for loop
+//for loop array or arraylist  for(int i : arr){};
+class Main{
+    public static void main(String[] args){
+        loops(5);
+    }
+    public static void loops(int n){
+        for(int i=1;i<=n;i++){
+            System.out.print(" "+i);
+        }
+        int j=1;
+        while(j<=n){
+            System.out.print("J "+j);
+            j++;
+        }
+        int k =10;
+        do{
+           System.out.print(" "+k);
+            k++; 
+        }while(k<=n);
+    }
+}
