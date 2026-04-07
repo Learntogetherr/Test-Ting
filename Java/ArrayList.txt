@@ -1,0 +1,17 @@
+
+import java.util.List; //interface
+import java.util.ArrayList;//class that is implementing the list interface
+class Main {
+    public static void main(String[] args) {
+        int arr[] ={5,7,9,55};
+        List<Integer> li= new ArrayList(); // empty arraylist
+        for(int i:arr){
+            li.add(i);}
+       li.add(99);  // adding element
+       li.remove(2);// removing element
+       li.set(0,8); // updating an element 
+       System.out.println(li);
+    
+    }
+ 
+}

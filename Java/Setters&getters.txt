@@ -1,0 +1,21 @@
+class Main{
+    public static void main(String[] args){
+        System.out.println("yo boy !");
+        Login lg = new Login();
+        //System.out.println(lg.userName);
+        lg.setUserName("Tester");
+        lg.getUserName();
+    }
+}
+class Login{
+     private String userName;
+    //set
+    public String setUserName(String name){
+      System.out.println("Value set");
+      return this.userName=name;
+    }
+    //get
+    public void getUserName(){
+        System.out.println(this.userName);
+    }
+}

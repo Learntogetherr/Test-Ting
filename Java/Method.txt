@@ -1,0 +1,22 @@
+
+class Main {
+    public static void main(String[] args) {
+    Main.hello();
+    Main.hellos("Hello Manish");
+    String result=Main.hell("Hello God");
+    System.out.println(result);
+    System.out.println(Main.hell());
+    }
+    public static void hello(){
+        System.out.println("Hello World !");    //type 1
+    }
+     public static void hellos(String name){//type 2
+        System.out.println(name);
+    }
+     public static String hell(){  // method overloading 
+       return "Hello Chiru";    //type 3
+    }
+    public static String hell(String name){
+       return name;   //type 4
+    }
+}
