@@ -1,0 +1,27 @@
+class Mian{
+    public static void main(String[] args){
+        //main for execution 
+        Test test=new Test();
+        test.userDetails();
+        Test test1=new Test("Chiranjeev",30);
+        test1.userDetails();
+        
+    }
+}
+class Test{
+    private String userName; //private is access modifier
+    private int userAge;
+    public Test(){ 
+        // constructor with no parameter will set default value
+        this.userName="Enter userName";
+        this.userAge=0;  
+    }
+    public Test(String name,int age){
+        //parmitrize constructor
+        this.userName=name;
+        this.userAge=age;
+    }
+    public void userDetails(){ //function def
+        System.out.println("Name :"+userName+" "+"Age :"+userAge);
+    }
+}
