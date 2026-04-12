@@ -1,0 +1,42 @@
+import java.util.Arrays;
+class Mian {
+    public static void main(String[] args){
+        //main for execution 
+        Test test=new Test();
+        test.userDetails();
+        Test test1=new Test("Chiranjeev",30);
+        test1.userDetails();
+        //call earray from collection class
+        CollectionFrameWork cf=new CollectionFrameWork();
+        cf.emptyArray(5);
+        
+    }
+}
+class Test{
+    private String userName; //private is access modifier
+    private int userAge;
+    public Test(){ 
+        // constructor with no parameter will set default value
+        this.userName="Enter userName";
+        this.userAge=0;  
+    }
+    public Test(String name,int age){
+        //parmitrize constructor
+        this.userName=name;
+        this.userAge=age;
+    }
+    public void userDetails(){ //function def
+        System.out.println("Name :"+userName+" "+"Age :"+userAge);
+    }
+}
+class CollectionFrameWork{
+    //List interface ArrayList LinkedList
+  public void emptyArray(int size){
+    int[] earr = new int[size];
+    for(int i=0;i<earr.length;i++){
+        earr[i]=i;
+     }
+    System.out.println(earr);// it will print memory ref as it treat array as object so we need to usee toString from Arrays class.
+    System.out.println(Arrays.toString(earr));
+  }
+}
