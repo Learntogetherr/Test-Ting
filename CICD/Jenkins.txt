@@ -1,0 +1,5 @@
+cmd to start jenkin server after installing
+
+cmd
+
+java -jar Jenkins.war --httpPort=9090  we can use any avilable port
