@@ -19,7 +19,8 @@ class Main{
         try{
         //   evenOdd(enterUserInput());
         //   arr();
-           collection();
+         //  collection();
+         pattern();
         }
         catch(Exception e){
             System.out.println("Error :"+e.getMessage());
@@ -74,6 +75,16 @@ class Main{
         System.out.println("Sorted List is :"+ ls);
         ls.remove(2);      //remove index 
         System.out.println("Removed List is :"+ ls);
+    }
+    public  static void pattern(){
+        for (int i=1;i<=3;i++){  //n=3
+            //row //direction
+            for(int j=1;j<=i;j++) //n=3
+            {//column //value
+             System.out.print(j);
+            }
+            System.out.println(" ");
+        }
     }
 
 }
