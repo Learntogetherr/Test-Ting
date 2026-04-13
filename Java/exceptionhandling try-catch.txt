@@ -1,0 +1,46 @@
+import java.io.File;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Collections;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.TreeSet;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.LinkedHashMap;
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+     try{
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Enter user name and age ");
+         String userName = sc.nextLine();
+         int userAge =sc.nextInt();
+         System.out.println("User name is :"+ userName);
+         System.out.println("User age is :"+ userAge);
+         sc.close();}
+         catch(Exception e){
+             System.out.println(e +" Something went Wrong");
+         }
+         calls();
+    }
+    public static void calls()
+    {   int[] arr={8,9,4,3,2,6};
+        List<Integer> ls=new ArrayList<>();
+        List<Integer> lsl=new LinkedList<>();
+        for(int i:arr)
+        {
+            ls.add(i);
+            lsl.add(i);
+        }ls.add(5);
+        ls.remove(5);
+        System.out.println("ArrayList :"+ls);
+        System.out.println("LinkedList :"+lsl);
+    }
+}

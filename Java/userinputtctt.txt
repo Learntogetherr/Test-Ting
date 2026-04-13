@@ -1,0 +1,35 @@
+class Main{
+    public static void main(String[] args){
+        try{
+           evenOdd(enterUserInput());
+        }
+        catch(Exception e){
+            System.out.println("Error :"+e.getMessage());
+        }
+        finally
+        {
+            System.out.println("Code run complete");
+        }
+    }
+    public static void evenOdd(int n) throws Exception{
+        if(n<0){
+            throw new Exception("Number can't be less than zero .");
+        }
+        if(n%2==0){
+            System.out.println(n+" Even");
+        }
+        else{
+         System.out.println(n+" Odd");   
+        }
+        
+    }
+    public static int enterUserInput() throws Exception{
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number :");
+        int n =sc.nextInt();
+        if(n>10){
+            throw new Exception("value can't be gt 10");
+        }
+        return n;
+    }
+}

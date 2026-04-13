@@ -1,0 +1,79 @@
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.TreeSet;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.io.File;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.util.Collections;
+class Main{
+    public static void main(String[] args){
+        try{
+        //   evenOdd(enterUserInput());
+        //   arr();
+           collection();
+        }
+        catch(Exception e){
+            System.out.println("Error :"+e.getMessage());
+        }
+        finally
+        {
+            System.out.println("Code run complete");
+        }
+    }
+    public static void evenOdd(int n) throws Exception{
+        if(n<0){
+            throw new Exception("Number can't be less than zero .");
+        }
+        if(n%2==0){
+            System.out.println(n+" Even");
+        }
+        else{
+         System.out.println(n+" Odd");   
+        }
+        
+    }
+    public static int enterUserInput() throws Exception{
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number :");
+        int n =sc.nextInt();
+        if(n>10){
+            throw new Exception("value can't be gt 10");
+        }
+        return n;
+    }
+    public static void arr(){
+        int[] arr=new int[3]; //fixed size array declared;
+        arr[0]=33;
+        arr[1]=1;
+        arr[2]=5;
+        System.out.println(arr);//ref value
+        System.out.println(Arrays.toString(arr));//prop value
+        Arrays.sort(arr);//to sort array
+        System.out.println(Arrays.toString(arr));//prop value
+    }
+    public static void collection(){
+        List<String> ls = new ArrayList<>();
+        ls.add("Ram");
+        ls.add("chiru");
+        ls.add("adam");
+        System.out.println("List is :"+ ls);
+        for (int i = 0; i < ls.size(); i++) {
+            ls.set(i, ls.get(i).toUpperCase()); //set get use
+        }
+        System.out.println("List is :"+ ls);
+        Collections.sort(ls);
+        System.out.println("Sorted List is :"+ ls);
+        ls.remove(2);      //remove index 
+        System.out.println("Removed List is :"+ ls);
+    }
+
+}

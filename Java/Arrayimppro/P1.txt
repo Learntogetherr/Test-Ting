@@ -1,0 +1,6 @@
+ public static void arr(){
+        int[] arr=new int[3]; //fixed size array declared;
+        arr[0]=33;
+        System.out.println(arr);//ref value
+        System.out.println(Arrays.toString(arr));//prop value
+    }

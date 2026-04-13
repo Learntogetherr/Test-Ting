@@ -1,0 +1,28 @@
+import java.io.IOException;
+
+public class BankAccount {
+    double balance = 500.00;
+
+    // 1. "throws" is the WARNING in the method signature
+    public void withdraw(double amount) throws Exception {
+        
+        if (amount > balance) {
+            // 2. "throw" is the ACTION that triggers the error
+            throw new Exception("Insufficient funds! You only have $" + balance);
+        }
+
+        balance -= amount;
+        System.out.println("Withdrawal successful. New balance: $" + balance);
+    }
+
+    public static void main(String[] args) {
+        BankAccount myAccount = new BankAccount();
+
+        try {
+            // Since withdraw() has "throws", we MUST wrap it in a try-catch
+            myAccount.withdraw(1000.00); 
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
